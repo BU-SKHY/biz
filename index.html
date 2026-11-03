@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부석현 - 자기소개</title>
+    <style>
+        :root {
+            --primary-color: #2b5876;
+            --secondary-color: #4e4376;
+            --accent-color: #00d2ff;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --subtext-color: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .info-card h3 {
+            font-size: 0.9rem;
+            color: var(--subtext-color);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .info-card p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .intro-text {
+            font-size: 1.05rem;
+            color: #4a5568;
+            word-break: keep-all;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skill-tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .footer {
+            background: #f8fafc;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--subtext-color);
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>부석현</h1>
+            <p>비즈니스와 기술을 잇는 경영정보학도</p>
+            <span class="badge">Management Information Systems</span>
+        </header>
+
+        <div class="content">
+            <section class="section">
+                <h2 class="section-title">📌 프로필 정보</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>이름</h3>
+                        <p>부석현</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>전공</h3>
+                        <p>경영정보학과</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">💡 자기소개</h2>
+                <p class="intro-text">
+                    안녕하세요! 경영정보학과 부석현입니다.<br>
+                    경영학적 통찰력과 정보기술(IT) 인프라에 대한 이해를 바탕으로, 비즈니스 문제를 데이터와 시스템으로 해결하는 데 흥미를 느끼고 있습니다. 효율적인 프로세스 설계와 데이터 기반의 의사결정을 지향하며 성장을 이어나가고 있습니다.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">🚀 주요 관심 분야</h2>
+                <ul class="skills-list">
+                    <li class="skill-tag">비즈니스 데이터 분석</li>
+                    <li class="skill-tag">IT 시스템 기획</li>
+                    <li class="skill-tag">경영 정보 시스템 (MIS)</li>
+                    <li class="skill-tag">프로세스 혁신</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 부석현. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
